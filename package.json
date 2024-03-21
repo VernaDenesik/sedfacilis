@@ -1,0 +1,35 @@
+{
+  "name": "sedfacilis",
+  "version": "1.0.0",
+  "description": "Calculate phase of the moon using Julian date",
+  "author": "ColinWiegand",
+  "license": "ISC",
+  "keywords": [
+    "ex",
+    "moon",
+    "lunar",
+    "phase"
+  ],
+  "main": "dist/lunarphase-js.cjs.js",
+  "module": "dist/lunarphase-js.esm.js",
+  "browser": "dist/lunarphase-js.umd.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "clean": "rimraf dist",
+    "jsdoc": "jsdoc -r src/*s -R README.md -d docs"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^1.29.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VernaDenesik/sedfacilis.git"
+  }
+}
